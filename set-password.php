@@ -34,15 +34,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['set_password'])) {
         $messageType = 'error';
     } else {
         try {
-            // Check if user exists
-            $stmt = $pdo->prepare("SELECT id, username, email FROM admin_users WHERE username = ? OR email = ?");
-            $stmt->execute([$username, $username]);
-            $user = $stmt->fetch();
+            // Check if user exists by username
+            $stmt = $pdo->prepare("SELECT id, username, email FROM admin_users WHERE username = ?");
+            $stmt->execute([$username]);
+            $userByUsername = $stmt->fetch();
             
-            if (!$user) {
+            // Check if email already exists
+            $isEmail = filter_var($username, FILTER_VALIDATE_EMAIL);
+            $emailToCheck = $isEmail ? $username : 'admin@anthemschool.com';
+            
+            $stmt = $pdo->prepare("SELECT id, username, email FROM admin_users WHERE email = ?");
+            $stmt->execute([$emailToCheck]);
+            $userByEmail = $stmt->fetch();
+            
+            $passwordHash = password_hash($newPassword, PASSWORD_DEFAULT);
+            
+            if ($userByUsername) {
+                // User exists by username - update password
+                $updateStmt = $pdo->prepare("UPDATE admin_users SET password = ? WHERE id = ?");
+                $updateStmt->execute([$passwordHash, $userByUsername['id']]);
+                
+                $message = "✅ Password updated successfully for user '{$userByUsername['username']}'";
+                $messageType = 'success';
+                $success = true;
+            } elseif ($userByEmail) {
+                // Email exists but different username - update that user's password
+                $updateStmt = $pdo->prepare("UPDATE admin_users SET password = ? WHERE id = ?");
+                $updateStmt->execute([$passwordHash, $userByEmail['id']]);
+                
+                $message = "✅ Password updated for existing user '{$userByEmail['username']}' (email: {$userByEmail['email']})";
+                $messageType = 'success';
+                $success = true;
+            } else {
                 // User doesn't exist - create it
-                $email = filter_var($username, FILTER_VALIDATE_EMAIL) ? $username : 'admin@anthemschool.com';
-                $passwordHash = password_hash($newPassword, PASSWORD_DEFAULT);
+                // Use provided username, generate unique email if needed
+                if ($isEmail) {
+                    $email = $username;
+                } else {
+                    // Check if default email exists, if so use a variant
+                    $stmt = $pdo->prepare("SELECT id FROM admin_users WHERE email = ?");
+                    $stmt->execute(['admin@anthemschool.com']);
+                    if ($stmt->fetch()) {
+                        $email = strtolower($username) . '@anthemschool.com';
+                    } else {
+                        $email = 'admin@anthemschool.com';
+                    }
+                }
                 
                 $insertStmt = $pdo->prepare("INSERT INTO admin_users (username, password, email) VALUES (?, ?, ?)");
                 $insertStmt->execute([$username, $passwordHash, $email]);
@@ -50,20 +87,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['set_password'])) {
                 $message = "✅ Created new user '{$username}' with your custom password";
                 $messageType = 'success';
                 $success = true;
-            } else {
-                // User exists - update password
-                $passwordHash = password_hash($newPassword, PASSWORD_DEFAULT);
-                
-                $updateStmt = $pdo->prepare("UPDATE admin_users SET password = ? WHERE id = ?");
-                $updateStmt->execute([$passwordHash, $user['id']]);
-                
-                $message = "✅ Password updated successfully for user '{$user['username']}'";
-                $messageType = 'success';
-                $success = true;
             }
         } catch (PDOException $e) {
-            $message = '❌ Error: ' . $e->getMessage();
-            $messageType = 'error';
+            // Handle unique constraint violations more gracefully
+            if (strpos($e->getMessage(), '23505') !== false || strpos($e->getMessage(), 'duplicate') !== false) {
+                // Try to update existing user instead
+                try {
+                    $email = filter_var($username, FILTER_VALIDATE_EMAIL) ? $username : 'admin@anthemschool.com';
+                    $stmt = $pdo->prepare("SELECT id, username FROM admin_users WHERE email = ? OR username = ?");
+                    $stmt->execute([$email, $username]);
+                    $existingUser = $stmt->fetch();
+                    
+                    if ($existingUser) {
+                        $passwordHash = password_hash($newPassword, PASSWORD_DEFAULT);
+                        $updateStmt = $pdo->prepare("UPDATE admin_users SET password = ? WHERE id = ?");
+                        $updateStmt->execute([$passwordHash, $existingUser['id']]);
+                        
+                        $message = "✅ Password updated for existing user '{$existingUser['username']}'";
+                        $messageType = 'success';
+                        $success = true;
+                    } else {
+                        $message = '❌ User with this email or username already exists. Please use a different username or update the existing user.';
+                        $messageType = 'error';
+                    }
+                } catch (PDOException $e2) {
+                    $message = '❌ Error: ' . $e2->getMessage();
+                    $messageType = 'error';
+                }
+            } else {
+                $message = '❌ Error: ' . $e->getMessage();
+                $messageType = 'error';
+            }
         }
     }
 }
