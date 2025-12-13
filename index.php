@@ -133,7 +133,7 @@ include 'includes/header.php';
                 </div>
                 
                 <!-- Quick Stats -->
-                <div class="grid grid-cols-3 gap-4 pt-8">
+                <div class="grid grid-cols-3 gap-4 mt-5 pt-[25px]">
                     <div class="text-center">
                         <div class="text-3xl md:text-4xl font-bold" style="color: #d4af37;"><?php echo clean($settings['students_count'] ?? '2500'); ?>+</div>
                         <div class="text-sm text-blue-200 mt-1">Students</div>
@@ -375,44 +375,44 @@ include 'includes/header.php';
 
 <!-- Toppers Section -->
 <?php if (!empty($toppers)): ?>
-<section class="py-16 md:py-24 bg-gradient-to-br from-navy-dark via-navy to-blue-800">
+<section class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-            <span class="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4" style="background-color: rgba(212, 175, 55, 0.2); color: #d4af37;">
+            <span class="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4 text-white" style="background-color: #d4af37;">
                 <i class="fas fa-trophy mr-2"></i>Our Pride
             </span>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                Celebrating Our <span style="color: #d4af37;">Achievers</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                Celebrating Our <span style="color: #b91c1c;">Achievers</span>
             </h2>
-            <p class="text-blue-200 max-w-2xl mx-auto text-lg">
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
                 Outstanding academic achievements by our brilliant students
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php foreach ($toppers as $topper): ?>
-            <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-3xl overflow-hidden border border-white border-opacity-20 card-hover">
-                <div class="relative h-64 bg-gradient-to-br from-gold to-yellow-500">
+            <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 card-hover">
+                <div class="relative h-64" style="background: linear-gradient(135deg, #d4af37, #f59e0b);">
                     <?php if ($topper['photo']): ?>
                         <img src="uploads/toppers/<?php echo clean($topper['photo']); ?>" 
                              alt="<?php echo clean($topper['name']); ?>" 
                              class="w-full h-full object-cover">
                     <?php else: ?>
                         <div class="w-full h-full flex items-center justify-center">
-                            <i class="fas fa-user-graduate text-white text-6xl"></i>
+                            <i class="fas fa-user-graduate text-6xl" style="color: #172554;"></i>
                         </div>
                     <?php endif; ?>
-                    <div class="absolute top-4 right-4 bg-maroon text-white px-4 py-2 rounded-full text-lg font-bold shadow-lg">
+                    <div class="absolute top-4 right-4 px-4 py-2 rounded-full text-lg font-bold shadow-lg text-white" style="background-color: #b91c1c;">
                         <?php echo clean($topper['percentage']); ?>%
                     </div>
                 </div>
-                <div class="p-6 text-white">
-                    <h3 class="text-xl font-bold mb-3"><?php echo clean($topper['name']); ?></h3>
-                    <div class="space-y-2 text-sm text-blue-100">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3"><?php echo clean($topper['name']); ?></h3>
+                    <div class="space-y-2 text-sm text-gray-600">
                         <p><i class="fas fa-star mr-2" style="color: #d4af37;"></i><?php echo clean($topper['marks']); ?></p>
-                        <p><i class="fas fa-graduation-cap mr-2" style="color: #d4af37;"></i><?php echo clean($topper['class']); ?> • <?php echo clean($topper['board']); ?></p>
+                        <p><i class="fas fa-graduation-cap mr-2" style="color: #1e3a8a;"></i><?php echo clean($topper['class']); ?> • <?php echo clean($topper['board']); ?></p>
                         <?php if ($topper['achievement']): ?>
-                        <p class="font-medium pt-2" style="color: #d4af37;"><?php echo clean($topper['achievement']); ?></p>
+                        <p class="font-semibold pt-2" style="color: #b91c1c;"><?php echo clean($topper['achievement']); ?></p>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -421,7 +421,7 @@ include 'includes/header.php';
         </div>
 
         <div class="text-center mt-12">
-            <a href="toppers.php" class="inline-flex items-center px-8 py-4 rounded-full font-bold hover:bg-yellow-400 transition shadow-xl" style="background-color: #d4af37; color: #172554;">
+            <a href="toppers.php" class="inline-flex items-center px-8 py-4 rounded-full font-bold text-white hover:opacity-90 transition shadow-xl" style="background-color: #1e3a8a;">
                 View All Toppers <i class="fas fa-arrow-right ml-2"></i>
             </a>
         </div>
