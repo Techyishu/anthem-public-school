@@ -47,21 +47,30 @@ include 'includes/header.php';
         <!-- Leadership Section -->
         <div class="mb-16">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Our Leadership</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
-                    <img src="assets/images/logo.jpg" alt="Principal" class="w-full h-80 object-cover">
+                    <img src="assets/images/about-school.jpg" alt="Chairman" class="w-full h-80 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Rajesh Kumar</h3>
-                        <p class="text-blue-600 font-semibold mb-3">Principal</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Satpal Chauhan</h3>
+                        <p class="text-blue-600 font-semibold mb-3">Chairman</p>
                         <p class="text-gray-600 text-sm">Leading with vision and dedication to nurture future leaders</p>
                     </div>
                 </div>
                 
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
-                    <img src="assets/images/about-school.jpg" alt="Vice Principal" class="w-full h-80 object-cover">
+                    <img src="assets/images/logo.jpg" alt="Director" class="w-full h-80 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Mrs. Sunita Verma</h3>
-                        <p class="text-purple-600 font-semibold mb-3">Vice Principal</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sompal Rana</h3>
+                        <p class="text-green-600 font-semibold mb-3">Director</p>
+                        <p class="text-gray-600 text-sm">Driving excellence and innovation in education</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <img src="assets/images/school-building.jpg" alt="Principal" class="w-full h-80 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Mrs. Amita Chopra</h3>
+                        <p class="text-purple-600 font-semibold mb-3">Principal</p>
                         <p class="text-gray-600 text-sm">Committed to academic excellence and student development</p>
                     </div>
                 </div>
@@ -147,7 +156,7 @@ include 'includes/header.php';
                         Our dedicated faculty, modern facilities, and comprehensive curriculum ensure that every student receives the best possible education. We encourage our students to dream big, work hard, and make a positive impact on the world.
                     </p>
                     <div class="pt-4">
-                        <p class="font-bold text-xl">Dr. Rajesh Kumar</p>
+                        <p class="font-bold text-xl">Mrs. Amita Chopra</p>
                         <p class="text-blue-200">Principal</p>
                     </div>
                 </div>
