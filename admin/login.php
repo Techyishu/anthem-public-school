@@ -126,12 +126,6 @@ $timeout = isset($_GET['timeout']) ? true : false;
                         <i class="fas fa-sign-in-alt mr-2"></i>Login to Dashboard
                     </button>
                 </form>
-
-                <div class="mt-6 text-center">
-                    <p class="text-sm text-gray-600">
-                        Default credentials: <strong>admin</strong> / <strong>admin123</strong>
-                    </p>
-                </div>
             </div>
         </div>
 
