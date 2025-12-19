@@ -424,7 +424,7 @@ include 'includes/header.php';
             <!-- Director -->
             <div class="group bg-white rounded-3xl shadow-xl overflow-hidden card-hover">
                 <div class="relative h-72 overflow-hidden">
-                    <img src="assets/images/director-sompal-rana.jpg" alt="Director"
+                    <img src="assets/images/WhatsApp Image 2025-12-19 at 18.42.31.jpeg" alt="Director"
                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-maroon via-transparent to-transparent opacity-80">
