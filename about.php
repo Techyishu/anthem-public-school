@@ -51,16 +51,16 @@ include 'includes/header.php';
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
                     <img src="assets/images/about-school.jpg" alt="Chairman" class="w-full h-80 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Shri Satpal Chauhan</h3>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sh. Satpal Chauhan</h3>
                         <p class="text-blue-600 font-semibold mb-3">Chairman</p>
                         <p class="text-gray-600 text-sm">Leading with vision and dedication to nurture future leaders</p>
                     </div>
                 </div>
                 
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
-                    <img src="assets/images/director-sompal-rana.jpg" alt="Director" class="w-full h-80 object-cover">
+                    <img src="assets/images/WhatsApp Image 2025-12-19 at 18.42.31.jpeg" alt="Director" class="w-full h-80 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Shri Sompal Rana</h3>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sh. Sompal Rana</h3>
                         <p class="text-green-600 font-semibold mb-3">Director</p>
                         <p class="text-gray-600 text-sm">Driving excellence and innovation in education</p>
                     </div>
@@ -69,7 +69,7 @@ include 'includes/header.php';
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift">
                     <img src="assets/images/school-building.jpg" alt="Principal" class="w-full h-80 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Miss Amita Chopra</h3>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Ms. Amita Chopra</h3>
                         <p class="text-purple-600 font-semibold mb-3">Principal</p>
                         <p class="text-gray-600 text-sm">Committed to academic excellence and student development</p>
                     </div>
@@ -138,6 +138,47 @@ include 'includes/header.php';
             </div>
         </div>
 
+        <!-- Chairman's Message -->
+        <div class="bg-gradient-to-br from-red-600 to-red-800 rounded-2xl p-8 md:p-12 text-white mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-1">
+                    <img src="assets/images/about-school.jpg" alt="Chairman" class="w-48 h-48 rounded-full object-cover mx-auto border-4 border-white shadow-xl">
+                </div>
+                <div class="lg:col-span-2 space-y-4">
+                    <h3 class="text-2xl font-bold">Chairman's Message</h3>
+                    <p class="text-red-100 leading-relaxed">
+                        Dear Parents, Students, Faculty, and Staff
+                    </p>
+                    <p class="text-red-100 leading-relaxed">
+                        It is with great pleasure and pride that I address you as the Chairperson of our esteemed institution. As we reflect on the past academic year and look forward to the opportunities and challenges that lie ahead, I am filled with a profound sense of gratitude for the dedication and commitment demonstrated by each member of our school community.
+                    </p>
+                    <p class="text-red-100 leading-relaxed">
+                        Our school's mission to nurture young minds, foster academic excellence, and instill values of integrity, empathy, and leadership has never been more relevant than it is today. In these uncertain times, the strength of our community and the resilience of our spirit have been truly remarkable.
+                    </p>
+                    <p class="text-red-100 leading-relaxed">
+                        I would like to express my heartfelt appreciation to our exceptional faculty and staff for their unwavering dedication to the academic and personal growth of our students. Your passion, expertise, and tireless efforts are the foundation upon which our school's success is built.
+                    </p>
+                    <p class="text-red-100 leading-relaxed">
+                        To our students, Your resilience serves as an inspiration to us all, and I have no doubt that you will continue to excel in all your endeavors.
+                    </p>
+                    <p class="text-red-100 leading-relaxed">
+                        To our parents, thank you for your unwavering support, trust, and partnership. Your active involvement in your child's education is invaluable, and together, we will continue to provide a nurturing and empowering environment for our students to thrive.
+                    </p>
+                    <p class="text-red-100 leading-relaxed">
+                        As we embark on the journey ahead, let us remain committed to our shared values of excellence, innovation, and inclusivity. Together, we will continue to inspire and empower the next generation of leaders, thinkers, and changemakers.
+                    </p>
+                    <p class="text-red-100 leading-relaxed">
+                        Thank you for your continued support and dedication to our school.
+                    </p>
+                    <div class="pt-4">
+                        <p class="font-bold text-xl">Warm regards,</p>
+                        <p class="font-bold text-xl mt-2">Sh. Satpal Chauhan</p>
+                        <p class="text-red-200">Chairman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Principal's Message -->
         <div class="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl p-8 md:p-12 text-white">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
@@ -146,17 +187,30 @@ include 'includes/header.php';
                 </div>
                 <div class="lg:col-span-2 space-y-4">
                     <h3 class="text-2xl font-bold">Principal's Message</h3>
-                    <p class="text-blue-100 leading-relaxed">
-                        "<?php echo clean($settings['principal_message'] ?? 'Welcome to Anthem Public School, where we nurture young minds to become future leaders through excellence in education and holistic development.'); ?>"
+                    <p class="text-blue-100 leading-relaxed font-semibold">
+                        Dear stakeholders!
                     </p>
                     <p class="text-blue-100 leading-relaxed">
-                        It is my privilege to lead an institution that has been shaping young minds for over <?php echo clean($settings['years_established'] ?? '25'); ?> years. At Anthem Public School, we believe that education is not just about academic excellence, but about creating well-rounded individuals who are equipped to face the challenges of tomorrow.
+                        As we navigate through these unprecedented times, I am filled with immense pride in witnessing the resilience and dedication of our school community. I believe in upholding high standards with an absolute commitment to strive to understand and improve the educational process, using team strategies, while wholly centering on student achievement.
                     </p>
                     <p class="text-blue-100 leading-relaxed">
-                        Our dedicated faculty, modern facilities, and comprehensive curriculum ensure that every student receives the best possible education. We encourage our students to dream big, work hard, and make a positive impact on the world.
+                        Despite the obstacles presented by the ongoing global situation, our commitment to providing a safe, nurturing, and enriching environment for our students remains unwavering. Our dedicated faculty and staff are working tirelessly to adapt our curriculum and programs to ensure continuity in education while prioritizing the health and well-being of everyone.
+                    </p>
+                    <p class="text-blue-100 leading-relaxed">
+                        I want to extend my heartfelt gratitude to our parents for their unwavering support and partnership in this journey. Your collaboration has been instrumental in fostering a positive and conducive learning environment for our students, both in the physical and virtual realms.
+                    </p>
+                    <p class="text-blue-100 leading-relaxed">
+                        To our students, I commend your resilience, adaptability, and perseverance. Your continued dedication to learning and growth amidst challenging circumstances serves as a testament to your character and determination. Remember, your potential is limitless, and with determination and hard work, you can achieve anything you set your mind to.
+                    </p>
+                    <p class="text-blue-100 leading-relaxed">
+                        As we look ahead to the future, let us remain united in our commitment to excellence, innovation, and inclusivity. Together, we will overcome any obstacles that come our way and emerge stronger and more resilient than ever before.
+                    </p>
+                    <p class="text-blue-100 leading-relaxed font-semibold">
+                        Keep learning, keep growing, and keep striving for excellence.
                     </p>
                     <div class="pt-4">
-                        <p class="font-bold text-xl">Miss Amita Chopra</p>
+                        <p class="font-bold text-xl">Warm regards,</p>
+                        <p class="font-bold text-xl mt-2">Ms. Amita Chopra</p>
                         <p class="text-blue-200">Principal</p>
                     </div>
                 </div>

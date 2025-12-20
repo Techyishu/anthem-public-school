@@ -415,7 +415,7 @@ include 'includes/header.php';
                     </div>
                 </div>
                 <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-gray-900">Shri Satpal Chauhan</h3>
+                    <h3 class="text-xl font-bold text-gray-900">Sh. Satpal Chauhan</h3>
                     <p class="text-gray-600 mt-2 text-sm">Leading with vision and dedication to nurture future leaders
                     </p>
                 </div>
@@ -435,7 +435,7 @@ include 'includes/header.php';
                     </div>
                 </div>
                 <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-gray-900">Shri Sompal Rana</h3>
+                    <h3 class="text-xl font-bold text-gray-900">Sh. Sompal Rana</h3>
                     <p class="text-gray-600 mt-2 text-sm">Driving excellence and innovation in education</p>
                 </div>
             </div>
@@ -453,7 +453,7 @@ include 'includes/header.php';
                     </div>
                 </div>
                 <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-gray-900">Miss Amita Chopra</h3>
+                    <h3 class="text-xl font-bold text-gray-900">Ms. Amita Chopra</h3>
                     <p class="text-gray-600 mt-2 text-sm">Committed to academic excellence and student development</p>
                 </div>
             </div>
