@@ -179,6 +179,38 @@ include 'includes/header.php';
             </div>
         </div>
 
+        <!-- Director's Message -->
+        <div class="bg-gradient-to-br from-green-600 to-green-800 rounded-2xl p-8 md:p-12 text-white mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-1">
+                    <img src="assets/images/WhatsApp Image 2025-12-19 at 18.42.31.jpeg" alt="Director" class="w-48 h-48 rounded-full object-cover mx-auto border-4 border-white shadow-xl">
+                </div>
+                <div class="lg:col-span-2 space-y-4">
+                    <h3 class="text-2xl font-bold">Director's Message</h3>
+                    <p class="text-green-100 leading-relaxed font-semibold">
+                        Dear Members of Anthem Family
+                    </p>
+                    <p class="text-green-100 leading-relaxed">
+                        It's a pleasure to welcome you to Anthem International School, a community committed to nurturing young minds and fostering excellence. Our CBSE curriculum is designed to encourage curiosity, creativity, and critical thinking, empowering students to become confident, compassionate, and responsible global citizens.
+                    </p>
+                    <p class="text-green-100 leading-relaxed">
+                        As we embark on another academic journey, I invite you to partner with us in shaping the leaders of tomorrow. Let's work together to create a supportive and inclusive environment where curiosity thrives, creativity blooms, and dreams take flight.
+                    </p>
+                    <p class="text-green-100 leading-relaxed">
+                        I am excited to share our focus areas for the upcoming year: academic excellence, innovation, sustainability, and community engagement. Our dedicated faculty, staff, and parents are committed to providing a holistic learning experience that prepares students for success in an ever-changing world.
+                    </p>
+                    <p class="text-green-100 leading-relaxed font-semibold">
+                        Here's to a year of growth, discovery, and success!
+                    </p>
+                    <div class="pt-4">
+                        <p class="font-bold text-xl">Warm regards,</p>
+                        <p class="font-bold text-xl mt-2">Sh. Sompal Rana</p>
+                        <p class="text-green-200">Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Principal's Message -->
         <div class="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl p-8 md:p-12 text-white">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
