@@ -167,9 +167,10 @@ $typeLabels = [
 
             <!-- Contact Section -->
             <div class="mt-16 bg-white rounded-2xl shadow-lg p-8 border-t-4 border-blue-900">
-                <div class="md:flex items-center justify-between">
+                <div class="md:flex items-center justify-between text-center md:text-left">
                     <div class="mb-6 md:mb-0">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                        <h3
+                            class="text-2xl font-bold text-gray-800 mb-2 justify-center md:justify-start flex items-center">
                             <i class="fas fa-question-circle text-blue-900 mr-2"></i>
                             Need More Information?
                         </h3>

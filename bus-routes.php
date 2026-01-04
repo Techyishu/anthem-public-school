@@ -214,32 +214,32 @@ $busRoutes = $stmt->fetchAll();
 
                 <!-- Contact Section -->
                 <div
-                    class="mt-12 bg-gradient-to-r from-navy-dark via-navy to-blue-800 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
-                    <div class="md:flex items-center justify-between gap-8">
+                    class="mt-12 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
+                    <div class="md:flex items-center justify-between gap-8 text-center md:text-left">
                         <div class="mb-6 md:mb-0 flex-1">
-                            <h3 class="text-3xl font-bold mb-4 flex items-center">
-                                <i class="fas fa-headset text-gold mr-3"></i>
+                            <h3 class="text-3xl font-bold mb-4 flex items-center justify-center md:justify-start">
+                                <i class="fas fa-headset text-yellow-500 mr-3"></i>
                                 Need Transportation Assistance?
                             </h3>
                             <p class="text-blue-100 leading-relaxed">
                                 For bus route inquiries, new registrations, or any transport-related questions,
                                 please contact our transport coordinator.
                             </p>
-                            <div class="mt-6 space-y-3">
+                            <div class="mt-6 space-y-3 flex flex-col md:items-start items-center">
                                 <a href="tel:9896421785"
-                                    class="flex items-center text-white hover:text-gold transition">
+                                    class="flex items-center text-white hover:text-yellow-400 transition">
                                     <i class="fas fa-phone-alt mr-3"></i>
                                     <span class="font-semibold">9896421785 / 8950081785</span>
                                 </a>
                                 <a href="mailto:anthemschool55@gmail.com"
-                                    class="flex items-center text-white hover:text-gold transition">
+                                    class="flex items-center text-white hover:text-yellow-400 transition">
                                     <i class="fas fa-envelope mr-3"></i>
                                     <span class="font-semibold">anthemschool55@gmail.com</span>
                                 </a>
                             </div>
                         </div>
                         <a href="contact.php"
-                            class="inline-block bg-gold text-navy px-8 py-4 rounded-full hover:bg-yellow-400 transition font-bold shadow-xl hover:shadow-2xl whitespace-nowrap">
+                            class="inline-block bg-yellow-400 text-blue-900 px-8 py-4 rounded-full hover:bg-yellow-300 transition font-bold shadow-xl hover:shadow-2xl whitespace-nowrap">
                             <i class="fas fa-paper-plane mr-2"></i>
                             Contact Us
                         </a>

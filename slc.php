@@ -180,16 +180,16 @@ require_once 'includes/header.php';
 
             <!-- Download Application Form -->
             <div
-                class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl shadow-lg p-8 text-white relative overflow-hidden">
+                class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl shadow-lg p-8 text-white relative overflow-hidden mb-12">
                 <div class="absolute right-0 top-0 h-full w-1/3 bg-white opacity-5 transform skew-x-12 translate-x-10">
                 </div>
-                <div class="md:flex items-center justify-between relative z-10">
+                <div class="md:flex items-center justify-between relative z-10 text-center md:text-left">
                     <div class="mb-6 md:mb-0">
                         <h3 class="text-2xl font-bold mb-2">Need an SLC?</h3>
                         <p class="text-blue-100">Download the official application form to initiate the process.</p>
                     </div>
                     <a href="#"
-                        class="inline-flex items-center bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition shadow-lg">
+                        class="inline-flex items-center justify-center bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-300 transition shadow-lg">
                         <i class="fas fa-file-pdf mr-2"></i>
                         Application Form
                     </a>
@@ -232,27 +232,27 @@ require_once 'includes/header.php';
 
             <!-- Contact Information -->
             <div
-                class="bg-gradient-to-r from-navy-dark via-navy to-blue-800 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
+                class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
                 <div class="text-center">
-                    <i class="fas fa-phone-alt text-gold text-5xl mb-6"></i>
+                    <i class="fas fa-phone-alt text-yellow-400 text-5xl mb-6"></i>
                     <h2 class="text-3xl font-bold mb-4">Need Assistance with TC?</h2>
                     <p class="text-blue-100 text-lg mb-8">
                         For any queries regarding Transfer Certificate, please contact our administration office
                     </p>
                     <div class="space-y-4 mb-8">
                         <a href="tel:9896421785"
-                            class="flex items-center justify-center text-white hover:text-gold transition text-lg">
+                            class="flex items-center justify-center text-white hover:text-yellow-400 transition text-lg">
                             <i class="fas fa-phone mr-3"></i>
                             <span class="font-semibold">9896421785 / 8950081785</span>
                         </a>
                         <a href="mailto:anthemschool55@gmail.com"
-                            class="flex items-center justify-center text-white hover:text-gold transition text-lg">
+                            class="flex items-center justify-center text-white hover:text-yellow-400 transition text-lg">
                             <i class="fas fa-envelope mr-3"></i>
                             <span class="font-semibold">anthemschool55@gmail.com</span>
                         </a>
                     </div>
                     <a href="contact.php"
-                        class="inline-block bg-gold text-navy px-8 py-4 rounded-full hover:bg-yellow-400 transition font-bold shadow-xl hover:shadow-2xl">
+                        class="inline-block bg-yellow-400 text-blue-900 px-8 py-4 rounded-full hover:bg-yellow-300 transition font-bold shadow-xl hover:shadow-2xl">
                         <i class="fas fa-paper-plane mr-2"></i>
                         Contact Administration
                     </a>

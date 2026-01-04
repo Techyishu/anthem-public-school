@@ -213,31 +213,39 @@ $categoryLabels = [
                 <?php endforeach; ?>
             <?php endif; ?>
 
+            <!-- Call to Action -->
+            <div
+                class="mt-16 bg-gradient-to-r from-blue-900 to-blue-800 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10"
+                    style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\' fill=\'%23ffffff\' fill-rule=\'evenodd\'/%3E%3C/svg%3E');">
+                </div>
+
+                <div class="relative z-10">
+                    <div class="inline-block bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-full mb-6">
+                        <i class="fas fa-running text-yellow-400 text-4xl"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Ready to Join Our Sports Program?</h2>
+                    <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                        Discover your potential and become part of our winning tradition.
+                        Excellence in sports starts here!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="admission.php"
+                            class="inline-block bg-yellow-400 text-blue-900 px-8 py-4 rounded-full hover:bg-yellow-300 transition font-bold shadow-xl hover:shadow-2xl">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            Apply for Admission
+                        </a>
+                        <a href="contact.php"
+                            class="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-blue-900 transition font-bold">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <div class="relative z-10">
-        <i class="fas fa-running text-gold text-5xl mb-4"></i>
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Join Our Sports Program?</h2>
-        <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-            Discover your potential and become part of our winning tradition.
-            Excellence in sports starts here!
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="admission.php"
-                class="inline-block bg-gold text-navy px-8 py-4 rounded-full hover:bg-yellow-400 transition font-bold shadow-xl hover:shadow-2xl">
-                <i class="fas fa-graduation-cap mr-2"></i>
-                Apply for Admission
-            </a>
-            <a href="contact.php"
-                class="inline-block bg-white bg-opacity-10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-navy transition font-bold">
-                <i class="fas fa-phone-alt mr-2"></i>
-                Contact Us
-            </a>
-        </div>
-    </div>
-</div>
-</div>
-</div>
 </div>
 
 <style>

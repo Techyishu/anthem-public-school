@@ -331,61 +331,67 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden lg:hidden pb-4">
-                <div class="flex flex-col space-y-1 border-t border-gray-200 pt-4">
+                <div class="flex flex-col space-y-2 border-t border-gray-200 pt-4 px-4 text-center">
                     <a href="index.php"
-                        class="<?php echo $currentPage === 'index.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg">
-                        <i class="fas fa-home mr-3 w-5"></i>Home
+                        class="<?php echo $currentPage === 'index.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700 hover:bg-gray-50'; ?> py-3 px-4 rounded-lg block">
+                        <i class="fas fa-home mr-2"></i>Home
                     </a>
                     <a href="about.php"
-                        class="<?php echo $currentPage === 'about.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg">
-                        <i class="fas fa-info-circle mr-3 w-5"></i>About
+                        class="<?php echo $currentPage === 'about.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700 hover:bg-gray-50'; ?> py-3 px-4 rounded-lg block">
+                        <i class="fas fa-info-circle mr-2"></i>About
                     </a>
                     <a href="toppers.php"
-                        class="<?php echo $currentPage === 'toppers.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg">
-                        <i class="fas fa-trophy mr-3 w-5"></i>Toppers
+                        class="<?php echo $currentPage === 'toppers.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700 hover:bg-gray-50'; ?> py-3 px-4 rounded-lg block">
+                        <i class="fas fa-trophy mr-2"></i>Toppers
                     </a>
                     <a href="staff.php"
-                        class="<?php echo $currentPage === 'staff.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg">
-                        <i class="fas fa-users mr-3 w-5"></i>Staff
+                        class="<?php echo $currentPage === 'staff.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700 hover:bg-gray-50'; ?> py-3 px-4 rounded-lg block">
+                        <i class="fas fa-users mr-2"></i>Staff
                     </a>
                     <a href="gallery.php"
-                        class="<?php echo $currentPage === 'gallery.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg">
-                        <i class="fas fa-images mr-3 w-5"></i>Gallery
+                        class="<?php echo $currentPage === 'gallery.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700 hover:bg-gray-50'; ?> py-3 px-4 rounded-lg block">
+                        <i class="fas fa-images mr-2"></i>Gallery
                     </a>
 
                     <!-- More Info Section -->
-                    <div class="py-2 px-4">
-                        <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">More Info</div>
+                    <div class="py-2 mt-2">
+                        <div
+                            class="inline-block px-4 py-1 bg-gray-100 rounded-full text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">
+                            More Information</div>
                     </div>
+
                     <a href="disclosure.php"
-                        class="<?php echo $currentPage === 'disclosure.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg ml-4">
-                        <i class="fas fa-file-alt mr-3 w-5"></i>Disclosure
+                        class="<?php echo $currentPage === 'disclosure.php' ? 'text-blue-900 font-bold bg-blue-50' : 'text-gray-600 hover:bg-gray-50'; ?> py-2 px-4 rounded-lg block text-sm">
+                        <i class="fas fa-file-alt mr-2 text-yellow-500"></i>Disclosure
                     </a>
                     <a href="sports.php"
-                        class="<?php echo $currentPage === 'sports.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg ml-4">
-                        <i class="fas fa-table-tennis mr-3 w-5"></i>Sports
+                        class="<?php echo $currentPage === 'sports.php' ? 'text-blue-900 font-bold bg-blue-50' : 'text-gray-600 hover:bg-gray-50'; ?> py-2 px-4 rounded-lg block text-sm">
+                        <i class="fas fa-running mr-2 text-yellow-500"></i>Sports
                     </a>
                     <a href="slc.php"
-                        class="<?php echo $currentPage === 'slc.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg ml-4">
-                        <i class="fas fa-certificate mr-3 w-5"></i>SLC
+                        class="<?php echo $currentPage === 'slc.php' ? 'text-blue-900 font-bold bg-blue-50' : 'text-gray-600 hover:bg-gray-50'; ?> py-2 px-4 rounded-lg block text-sm">
+                        <i class="fas fa-certificate mr-2 text-yellow-500"></i>SLC
                     </a>
                     <a href="bus-routes.php"
-                        class="<?php echo $currentPage === 'bus-routes.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg ml-4">
-                        <i class="fas fa-bus mr-3 w-5"></i>Bus Routes
+                        class="<?php echo $currentPage === 'bus-routes.php' ? 'text-blue-900 font-bold bg-blue-50' : 'text-gray-600 hover:bg-gray-50'; ?> py-2 px-4 rounded-lg block text-sm">
+                        <i class="fas fa-bus mr-2 text-yellow-500"></i>Bus Routes
                     </a>
                     <a href="fee-structure.php"
-                        class="<?php echo $currentPage === 'fee-structure.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg ml-4">
-                        <i class="fas fa-rupee-sign mr-3 w-5"></i>Fee Structure
+                        class="<?php echo $currentPage === 'fee-structure.php' ? 'text-blue-900 font-bold bg-blue-50' : 'text-gray-600 hover:bg-gray-50'; ?> py-2 px-4 rounded-lg block text-sm">
+                        <i class="fas fa-rupee-sign mr-2 text-yellow-500"></i>Fee Structure
                     </a>
 
                     <a href="contact.php"
-                        class="<?php echo $currentPage === 'contact.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700'; ?> py-3 px-4 rounded-lg">
-                        <i class="fas fa-envelope mr-3 w-5"></i>Contact
+                        class="<?php echo $currentPage === 'contact.php' ? 'text-maroon font-bold bg-red-50' : 'text-gray-700 hover:bg-gray-50'; ?> py-3 px-4 rounded-lg block mt-2">
+                        <i class="fas fa-envelope mr-2"></i>Contact
                     </a>
-                    <a href="admission.php"
-                        class="bg-gradient-to-r from-maroon to-red-700 text-white px-6 py-3 rounded-full text-center font-semibold mt-4">
-                        <i class="fas fa-graduation-cap mr-2"></i>Apply for Admission
-                    </a>
+
+                    <div class="pt-4 pb-2">
+                        <a href="admission.php"
+                            class="block w-full bg-gradient-to-r from-maroon to-red-700 text-white px-6 py-3 rounded-full shadow-lg font-bold text-center">
+                            <i class="fas fa-graduation-cap mr-2"></i>Apply for Admission
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
