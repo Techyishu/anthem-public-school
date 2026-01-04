@@ -37,7 +37,7 @@ $typeLabels = [
 ?>
 
 <!-- Page Header -->
-<div class="bg-gradient-to-r from-navy-dark via-navy to-blue-800 text-white py-12 relative overflow-hidden">
+<div class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white py-12 relative overflow-hidden">
     <div class="absolute inset-0 opacity-10">
         <div class="absolute inset-0"
             style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
@@ -47,10 +47,10 @@ $typeLabels = [
         <div class="max-w-3xl mx-auto text-center">
             <div
                 class="inline-block bg-white bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full mb-6 border border-white border-opacity-20">
-                <i class="fas fa-file-alt text-gold mr-2"></i>
-                <span class="text-gold font-semibold">Official Documents</span>
+                <i class="fas fa-file-alt text-yellow-400 mr-2"></i>
+                <span class="text-yellow-400 font-semibold">Official Documents</span>
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">School Disclosure</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">School Disclosure</h1>
             <p class="text-lg text-blue-100">
                 Access all mandatory and important school documents as per CBSE guidelines
             </p>
@@ -64,11 +64,11 @@ $typeLabels = [
         <div class="max-w-6xl mx-auto">
 
             <!-- Info Banner -->
-            <div class="bg-blue-50 border-l-4 border-navy rounded-lg p-6 mb-12 shadow-sm">
+            <div class="bg-blue-50 border-l-4 border-blue-900 rounded-lg p-6 mb-12 shadow-sm">
                 <div class="flex items-start">
-                    <i class="fas fa-info-circle text-navy text-2xl mt-1 mr-4"></i>
+                    <i class="fas fa-info-circle text-blue-900 text-2xl mt-1 mr-4"></i>
                     <div>
-                        <h3 class="text-navy font-bold text-lg mb-2">Transparency & Compliance</h3>
+                        <h3 class="text-blue-900 font-bold text-lg mb-2">Transparency & Compliance</h3>
                         <p class="text-gray-700">
                             As per CBSE guidelines, all mandatory documents are made available to parents, students, and
                             the general public for transparency.
@@ -92,8 +92,8 @@ $typeLabels = [
                         <!-- Type Header -->
                         <div class="flex items-center mb-6">
                             <div
-                                class="bg-gradient-to-r from-navy to-blue-700 text-white px-6 py-3 rounded-lg flex items-center shadow-lg">
-                                <i class="fas <?php echo $typeIcons[$type]; ?> text-gold text-xl mr-3"></i>
+                                class="bg-gradient-to-r from-blue-900 to-blue-700 text-white px-6 py-3 rounded-lg flex items-center shadow-lg">
+                                <i class="fas <?php echo $typeIcons[$type]; ?> text-yellow-400 text-xl mr-3"></i>
                                 <h2 class="text-xl font-bold">
                                     <?php echo clean($typeLabels[$type]); ?>
                                 </h2>
@@ -108,11 +108,12 @@ $typeLabels = [
                                     class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover-lift group">
                                     <!-- Document Icon Header -->
                                     <div
-                                        class="bg-gradient-to-br from-navy to-blue-700 p-6 text-center text-white relative overflow-hidden">
+                                        class="bg-gradient-to-br from-blue-900 to-blue-700 p-6 text-center text-white relative overflow-hidden">
                                         <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity">
                                         </div>
-                                        <i class="fas <?php echo $typeIcons[$type]; ?> text-5xl text-gold mb-3 relative z-10"></i>
-                                        <p class="text-sm text-blue-200 font-medium relative z-10">
+                                        <i
+                                            class="fas <?php echo $typeIcons[$type]; ?> text-5xl text-yellow-400 mb-3 relative z-10"></i>
+                                        <p class="text-sm text-blue-100 font-medium relative z-10">
                                             <?php echo clean($typeLabels[$type]); ?>
                                         </p>
                                     </div>
@@ -144,7 +145,7 @@ $typeLabels = [
 
                                         <?php if ($doc['document_file']): ?>
                                             <a href="uploads/disclosure/<?php echo clean($doc['document_file']); ?>" target="_blank"
-                                                class="block bg-gradient-to-r from-navy to-blue-700 text-white text-center py-3 px-6 rounded-lg hover:from-blue-700 hover:to-navy transition font-semibold shadow-md group-hover:shadow-lg">
+                                                class="block bg-gradient-to-r from-blue-900 to-blue-700 text-white text-center py-3 px-6 rounded-lg hover:from-blue-800 hover:to-blue-900 transition font-semibold shadow-md group-hover:shadow-lg">
                                                 <i class="fas fa-download mr-2"></i>
                                                 Download Document
                                             </a>
@@ -165,11 +166,11 @@ $typeLabels = [
             <?php endif; ?>
 
             <!-- Contact Section -->
-            <div class="mt-16 bg-white rounded-2xl shadow-lg p-8 border-t-4 border-navy">
+            <div class="mt-16 bg-white rounded-2xl shadow-lg p-8 border-t-4 border-blue-900">
                 <div class="md:flex items-center justify-between">
                     <div class="mb-6 md:mb-0">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">
-                            <i class="fas fa-question-circle text-navy mr-2"></i>
+                            <i class="fas fa-question-circle text-blue-900 mr-2"></i>
                             Need More Information?
                         </h3>
                         <p class="text-gray-600">
@@ -178,7 +179,7 @@ $typeLabels = [
                         </p>
                     </div>
                     <a href="contact.php"
-                        class="inline-block bg-gradient-to-r from-maroon to-red-700 text-white px-8 py-4 rounded-full hover:from-red-700 hover:to-maroon transition font-semibold shadow-lg hover:shadow-xl whitespace-nowrap">
+                        class="inline-block bg-gradient-to-r from-red-700 to-red-800 text-white px-8 py-4 rounded-full hover:from-red-800 hover:to-red-900 transition font-semibold shadow-lg hover:shadow-xl whitespace-nowrap">
                         <i class="fas fa-phone-alt mr-2"></i>
                         Contact Us
                     </a>
