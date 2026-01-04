@@ -183,12 +183,12 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
     <!-- Main Navigation -->
     <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-gold border-opacity-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-3">
+        <div class="container mx-auto px-2">
+            <div class="flex justify-between items-center py-2">
                 <!-- Logo -->
-                <a href="index.php" class="flex items-center space-x-3" aria-label="Home">
+                <a href="index.php" class="flex items-center space-x-2" aria-label="Home">
                     <img src="assets/images/logo.png" alt="<?php echo clean($schoolName); ?>"
-                        class="h-24 md:h-32 w-auto object-contain">
+                        class="h-16 md:h-20 w-auto object-contain">
                     <div class="flex flex-col">
                         <span class="text-sm md:text-base font-bold leading-tight">
                             <span style="color: #b91c1c;">Anthem</span> <span
@@ -198,83 +198,81 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 </a>
 
                 <!-- Desktop Menu -->
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-4">
                     <a href="index.php"
-                        class="<?php echo $currentPage === 'index.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition">
+                        class="<?php echo $currentPage === 'index.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition whitespace-nowrap">
                         Home
                     </a>
                     <a href="about.php"
-                        class="<?php echo $currentPage === 'about.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition">
+                        class="<?php echo $currentPage === 'about.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition whitespace-nowrap">
                         About
                     </a>
                     <a href="toppers.php"
-                        class="<?php echo $currentPage === 'toppers.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition">
+                        class="<?php echo $currentPage === 'toppers.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition whitespace-nowrap">
                         Toppers
                     </a>
                     <a href="staff.php"
-                        class="<?php echo $currentPage === 'staff.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition">
+                        class="<?php echo $currentPage === 'staff.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition whitespace-nowrap">
                         Staff
                     </a>
                     <a href="gallery.php"
-                        class="<?php echo $currentPage === 'gallery.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition">
+                        class="<?php echo $currentPage === 'gallery.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition whitespace-nowrap">
                         Gallery
                     </a>
 
                     <!-- More Info Dropdown -->
                     <div class="relative group">
                         <button
-                            class="<?php echo in_array($currentPage, ['disclosure.php', 'sports.php', 'slc.php', 'bus-routes.php', 'fee-structure.php']) ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition flex items-center">
+                            class="<?php echo in_array($currentPage, ['disclosure.php', 'sports.php', 'slc.php', 'bus-routes.php', 'fee-structure.php']) ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition flex items-center whitespace-nowrap">
                             More Info
                             <i class="fas fa-chevron-down ml-1 text-xs group-hover:rotate-180 transition-transform"></i>
                         </button>
 
                         <!-- Dropdown Menu -->
                         <div
-                            class="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 border border-gray-100">
-                            <div class="py-3">
+                            class="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 border border-gray-100">
+                            <div class="py-2">
                                 <a href="disclosure.php"
-                                    class="flex items-center px-5 py-3 hover:bg-blue-50 transition group/item">
+                                    class="flex items-center px-4 py-3 hover:bg-blue-50 transition">
                                     <div
-                                        class="bg-navy bg-opacity-10 p-2 rounded-lg mr-3 group-hover/item:bg-opacity-20 transition">
-                                        <i class="fas fa-file-alt text-navy"></i>
+                                        class="w-10 h-10 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fas fa-file-alt text-navy text-lg"></i>
                                     </div>
                                     <span
-                                        class="text-gray-700 font-medium group-hover/item:text-navy transition">Disclosure</span>
+                                        class="text-gray-700 font-medium hover:text-navy transition text-sm">Disclosure</span>
                                 </a>
-                                <a href="sports.php"
-                                    class="flex items-center px-5 py-3 hover:bg-blue-50 transition group/item">
+                                <a href="sports.php" class="flex items-center px-4 py-3 hover:bg-blue-50 transition">
                                     <div
-                                        class="bg-navy bg-opacity-10 p-2 rounded-lg mr-3 group-hover/item:bg-opacity-20 transition">
-                                        <i class="fas fa-table-tennis text-navy"></i>
+                                        class="w-10 h-10 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fas fa-futbol text-navy text-lg"></i>
                                     </div>
                                     <span
-                                        class="text-gray-700 font-medium group-hover/item:text-navy transition">Sports</span>
+                                        class="text-gray-700 font-medium hover:text-navy transition text-sm">Sports</span>
                                 </a>
-                                <a href="slc.php"
-                                    class="flex items-center px-5 py-3 hover:bg-blue-50 transition group/item">
+                                <a href="slc.php" class="flex items-center px-4 py-3 hover:bg-blue-50 transition">
                                     <div
-                                        class="bg-navy bg-opacity-10 p-2 rounded-lg mr-3 group-hover/item:bg-opacity-20 transition">
-                                        <i class="fas fa-certificate text-navy"></i>
+                                        class="w-10 h-10 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fas fa-certificate text-navy text-lg"></i>
                                     </div>
-                                    <span class="text-gray-700 font-medium group-hover/item:text-navy transition">School
+                                    <span class="text-gray-700 font-medium hover:text-navy transition text-sm">School
                                         Leaving Certificate</span>
                                 </a>
                                 <a href="bus-routes.php"
-                                    class="flex items-center px-5 py-3 hover:bg-blue-50 transition group/item">
+                                    class="flex items-center px-4 py-3 hover:bg-blue-50 transition">
                                     <div
-                                        class="bg-navy bg-opacity-10 p-2 rounded-lg mr-3 group-hover/item:bg-opacity-20 transition">
-                                        <i class="fas fa-bus text-navy"></i>
+                                        class="w-10 h-10 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fas fa-bus text-navy text-lg"></i>
                                     </div>
-                                    <span class="text-gray-700 font-medium group-hover/item:text-navy transition">Bus
+                                    <span class="text-gray-700 font-medium hover:text-navy transition text-sm">Bus
                                         Routes</span>
                                 </a>
                                 <a href="fee-structure.php"
-                                    class="flex items-center px-5 py-3 hover:bg-blue-50 transition group/item rounded-b-xl">
+                                    class="flex items-center px-4 py-3 hover:bg-blue-50 transition rounded-b-xl">
                                     <div
-                                        class="bg-navy bg-opacity-10 p-2 rounded-lg mr-3 group-hover/item:bg-opacity-20 transition">
-                                        <i class="fas fa-rupee-sign text-navy"></i>
+                                        class="w-10 h-10 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
+                                        <i class="fas fa-rupee-sign text-navy text-lg"></i>
                                     </div>
-                                    <span class="text-gray-700 font-medium group-hover/item:text-navy transition">Fee
+                                    <span class="text-gray-700 font-medium hover:text-navy transition text-sm">Fee
                                         Structure</span>
                                 </a>
                             </div>
@@ -282,7 +280,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                     </div>
 
                     <a href="contact.php"
-                        class="<?php echo $currentPage === 'contact.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition">
+                        class="<?php echo $currentPage === 'contact.php' ? 'text-maroon font-bold' : 'text-gray-700 hover:text-navy font-medium'; ?> transition whitespace-nowrap">
                         Contact
                     </a>
 
@@ -294,9 +292,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
                     <!-- Admission Button -->
                     <a href="admission.php"
-                        class="bg-gradient-to-r from-maroon to-red-700 px-6 py-2.5 rounded-full hover:from-red-700 hover:to-maroon transition shadow-lg font-semibold"
-                        style="color: var(--maroon-red);">
-                        <i class="fas fa-graduation-cap mr-2"></i>Admission
+                        class="bg-gradient-to-r from-maroon to-red-700 text-white px-4 py-2 rounded-full hover:from-red-700 hover:to-maroon transition shadow-lg font-semibold text-sm"
+                        style="color: white;">
+                        <i class="fas fa-graduation-cap mr-1"></i>Admission
                     </a>
                 </div>
 
