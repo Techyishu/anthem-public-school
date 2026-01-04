@@ -23,6 +23,29 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <meta name="description"
         content="<?php echo clean(getSiteSetting('about_text', 'Anthem International School - Prosperity with Purity - Excellence in Education')); ?>">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#1e3a8a',
+                            dark: '#172554',
+                            light: '#2563eb'
+                        },
+                        maroon: {
+                            DEFAULT: '#b91c1c',
+                            light: '#dc2626'
+                        },
+                        gold: {
+                            DEFAULT: '#d4af37',
+                            light: '#f5d78e'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -39,36 +62,37 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             font-family: 'Poppins', sans-serif;
         }
 
+        /* Legacy class support */
         .bg-navy {
-            background-color: var(--navy-blue);
+            background-color: var(--navy-blue) !important;
         }
 
         .bg-navy-dark {
-            background-color: var(--navy-dark);
+            background-color: var(--navy-dark) !important;
         }
 
         .bg-maroon {
-            background-color: var(--maroon-red);
+            background-color: var(--maroon-red) !important;
         }
 
         .bg-gold {
-            background-color: var(--gold);
+            background-color: var(--gold) !important;
         }
 
         .text-navy {
-            color: var(--navy-blue);
+            color: var(--navy-blue) !important;
         }
 
         .text-maroon {
-            color: var(--maroon-red);
+            color: var(--maroon-red) !important;
         }
 
         .text-gold {
-            color: var(--gold);
+            color: var(--gold) !important;
         }
 
         .border-gold {
-            border-color: var(--gold);
+            border-color: var(--gold) !important;
         }
 
         .gradient-bg {
